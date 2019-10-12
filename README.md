@@ -1,7 +1,7 @@
 # Projektna-naloga
 Analiza podatkov pri programiranju 1
 
-Najbolj popularne restavracije v New Yorku
+Najbolj popularne restavracije v Ljubljani
 ==============================================
 
 Analizirala bom vseh 559 ljubljanskih restavracij glede na število glasov na strani
