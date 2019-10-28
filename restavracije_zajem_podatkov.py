@@ -6,15 +6,25 @@ import os
 ###############################################################################
 # Pomožnia orodja za pridobivanje podatkov s spleta.
 ###############################################################################
-
+dodatek = ""
 # URL glavne strani
-restaurants_frontpage_url = 'https://www.tripadvisor.com/Restaurants-g274873-Ljubljana_Upper_Carniola_Region.html#EATERY_OVERVIEW_BOX'
+restaurants_frontpage_url = f'https://www.tripadvisor.com/Restaurants-g274873-{dodatek}Ljubljana_Upper_Carniola_Region.html#EATERY_OVERVIEW_BOX'
 # mapa, v katero bomo shranili podatke
 restaurants_directory = 'restavracije'
 # ime datoteke v katero bomo shranili glavno stran
 frontpage_filename = 'frontpage.html'
 # ime CSV datoteke v katero bomo shranili podatke
 csv_filename = 'restavracije.csv'
+
+
+def zamenjaj_stran(st_strani):
+    if st_strani == 1:
+        dodatek = ""
+    else:
+        dodatek = f"-oa{30 * st_strani}-"
+    return dodatek
+
+
 
 
 def download_url_to_string(url):
@@ -31,6 +41,7 @@ def download_url_to_string(url):
         page_content = ""
     # nadaljujemo s kodo če ni prišlo do napake
     return page_content
+
 
 
 def save_string_to_file(text, directory, filename):
@@ -55,6 +66,13 @@ def save_frontpage(page, directory, filename):
     save_string_to_file(content, directory, filename)
     return
 
+
+def potegni_strani():
+    for stevilo in range(1, 20):
+        dodatek = zamenjaj_stran(stevilo)
+        frontpage_filename = f"frontpage_{stevilo}.html"
+        stran = f'https://www.tripadvisor.com/Restaurants-g274873-{dodatek}Ljubljana_Upper_Carniola_Region.html#EATERY_OVERVIEW_BOX' 
+        save_frontpage(stran, restaurants_directory, frontpage_filename)
 
 ###############################################################################
 # Po pridobitvi podatkov jih želimo obdelati.
@@ -85,16 +103,18 @@ def page_to_ads(page_content):
 
 # Definirajte funkcijo, ki sprejme niz, ki predstavlja oglas, in izlušči
 # podatke o imenu, ceni in opisu v oglasu.
+bloki = page_to_ads(read_file_to_string("restavracije", "frontpage_1.html"))
 
 
 def get_dict_from_ad_block(block):
     """Funkcija iz niza za posamezen oglasni blok izlušči podatke o imenu, ceni
     in opisu ter vrne slovar, ki vsebuje ustrezne podatke
     """
-    rx = re.compile(r'title="(?P<name>.*?)"'
-                    r'.*?</h3>\s*(?P<description>.*?)\s*</?div'
-                    r'.*?class="price">(<span>)?(?P<price>.*?)'
-                    r'( €</span>)?</div',
+    rx = re.compile(r'title="(?P<name>.*?)".*?'
+                    r'>(?P<stevilo_glasov>\d*(,)?\d*) Reviews.*?'
+                    r'("item price">(?P<cena>\$*.*\$))?'
+                    r'(, (?P<tip>.*?)</div)?',
+                    #r'.*?</div></div></div>',
                     re.DOTALL)
     data = re.search(rx, block)
     ad_dict = data.groupdict()
