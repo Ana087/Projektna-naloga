@@ -4,7 +4,7 @@ import csv
 import os
 
 ###############################################################################
-# Pomožnia orodja za pridobivanje podatkov s spleta.
+# Pomožna orodja za pridobivanje podatkov s spleta.
 ###############################################################################
 dodatek = ""
 # URL glavne strani
@@ -21,10 +21,8 @@ def zamenjaj_stran(st_strani):
     if st_strani == 1:
         dodatek = ""
     else:
-        dodatek = f"-oa{30 * st_strani}-"
+        dodatek = f"-oa{30 * (st_strani - 1)}-"
     return dodatek
-
-
 
 
 def download_url_to_string(url):
@@ -41,7 +39,6 @@ def download_url_to_string(url):
         page_content = ""
     # nadaljujemo s kodo če ni prišlo do napake
     return page_content
-
 
 
 def save_string_to_file(text, directory, filename):
@@ -74,6 +71,8 @@ def potegni_strani():
         stran = f'https://www.tripadvisor.com/Restaurants-g274873-{dodatek}Ljubljana_Upper_Carniola_Region.html#EATERY_OVERVIEW_BOX' 
         save_frontpage(stran, restaurants_directory, frontpage_filename)
 
+
+
 ###############################################################################
 # Po pridobitvi podatkov jih želimo obdelati.
 ###############################################################################
@@ -95,7 +94,7 @@ def read_file_to_string(directory, filename):
 def page_to_ads(page_content):
     """Funkcija poišče posamezne oglase, ki se nahajajo v spletni strani in
     vrne njih seznam"""
-    rx = re.compile(r'<div class="poi">(.*?)<div class="booking"><\/div>',
+    rx = re.compile(r'{"detailPageUrl":"/Restaurant_Review(.*?)"isLocalChefItem":false}',
                     re.DOTALL)
     ads = re.findall(rx, page_content)
     return ads
@@ -103,24 +102,25 @@ def page_to_ads(page_content):
 
 # Definirajte funkcijo, ki sprejme niz, ki predstavlja oglas, in izlušči
 # podatke o imenu, ceni in opisu v oglasu.
-bloki = page_to_ads(read_file_to_string("restavracije", "frontpage_1.html"))
-
+#bloki = page_to_ads(read_file_to_string("restavracije", "frontpage_18.html"))
+#get_dict_from_ad_block(bloki[1])
 
 def get_dict_from_ad_block(block):
-    """Funkcija iz niza za posamezen oglasni blok izlušči podatke o imenu, ceni
-    in opisu ter vrne slovar, ki vsebuje ustrezne podatke
+    """Funkcija iz niza za posamezen oglasni blok izlušči podatke o imenu, oceni, glasovih in tipu
+    ter vrne slovar, ki vsebuje ustrezne podatke
     """
-    rx = re.compile(r'title="(?P<name>.*?)".*?'
-                    r'>(?P<stevilo_glasov>\d*(,)?\d*) Reviews.*?'
-                    r'("item price">(?P<cena>\$*.*\$))?'
-                    r'(, (?P<tip>.*?)</div)?',
-                    #r'.*?</div></div></div>',
+    rx = re.compile(r'"name":"(?P<ime>.*?)".*?'
+                    r'"averageRating":(?P<rating>-?\d.?\d*?),.*?'
+                    r'"userReviewCount":(?P<glasovi>\d*),.*?'
+                    r'"establishmentTypeAndCuisineTags":\[(?P<tip>.*?)\],.*?'
+                    r'"priceTag":"?(?P<cena>.*?)"?,.*?',
                     re.DOTALL)
     data = re.search(rx, block)
     ad_dict = data.groupdict()
     return ad_dict
 
 #DEBUGGEX
+#ads_from_file("restavracije", "frontpage_1.html")
 
 
 # Definirajte funkcijo, ki sprejme ime in lokacijo datoteke, ki vsebuje
@@ -158,13 +158,13 @@ def write_csv(fieldnames, rows, directory, filename):
 
 
 # Definirajte funkcijo, ki sprejme neprazen seznam slovarjev, ki predstavljajo
-# podatke iz oglasa mačke, in zapiše vse podatke v csv datoteko. Imena za
+# podatke iz oglasa restavracije, in zapiše vse podatke v csv datoteko. Imena za
 # stolpce [fieldnames] pridobite iz slovarjev.
 
 
-def write_cat_ads_to_csv(ads, directory, filename):
+def write_restaurants_ads_to_csv(ads, directory, filename):
     """Funkcija vse podatke iz parametra "ads" zapiše v csv datoteko podano s
-    parametroma "directory"/"filename". Funkcija predpostavi, da sa ključi vseh
+    parametroma "directory"/"filename". Funkcija predpostavi, da so ključi vseh
     sloverjev parametra ads enaki in je seznam ads neprazen.
     """
     # Stavek assert preveri da zahteva velja
@@ -179,19 +179,19 @@ def write_cat_ads_to_csv(ads, directory, filename):
 
 def main(redownload=False, reparse=True):
     """Funkcija izvede celoten del pridobivanja podatkov:
-    1. Oglase prenese iz bolhe
+    1. Prenese oglase
     2. Lokalno html datoteko pretvori v lepšo predstavitev podatkov
     3. Podatke shrani v csv datoteko
     """
     # Najprej v lokalno datoteko shranimo glavno stran
-    save_frontpage(cat_directory, frontpage_filename)
+    save_frontpage(restaurants_frontpage_url, restaurants_directory, frontpage_filename)
 
     # Iz lokalne (html) datoteke preberemo podatke
-    ads = page_to_ads(read_file_to_string(cat_directory, frontpage_filename))
+    ads = page_to_ads(read_file_to_string(restaurants_directory, frontpage_filename))
     # Podatke prebermo v lepšo obliko (seznam slovarjev)
     ads_nice = [get_dict_from_ad_block(ad) for ad in ads]
     # Podatke shranimo v csv datoteko
-    write_cat_ads_to_csv(ads_nice, cat_directory, csv_filename)
+    write_restaurants_ads_to_csv(ads_nice, restaurants_directory, csv_filename)
 
 
 if __name__ == '__main__':
