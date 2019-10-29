@@ -133,6 +133,7 @@ def ads_from_file(filename, directory):
     pretvori (razčleni) v pripadajoč seznam slovarjev za vsak oglas posebej."""
     page = read_file_to_string(filename, directory)
     blocks = page_to_ads(page)
+
     ads = [get_dict_from_ad_block(block) for block in blocks]
     return ads
 
@@ -149,9 +150,9 @@ def write_csv(fieldnames, rows, directory, filename):
     """
     os.makedirs(directory, exist_ok=True)
     path = os.path.join(directory, filename)
-    with open(path, 'w') as csv_file:
+    with open(path, 'a') as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        writer.writeheader()
+        #writer.writeheader()
         for row in rows:
             writer.writerow(row)
     return
@@ -177,6 +178,7 @@ def write_restaurants_ads_to_csv(ads, directory, filename):
 
 # Celoten program poženemo v glavni funkciji
 
+
 def main(redownload=False, reparse=True):
     """Funkcija izvede celoten del pridobivanja podatkov:
     1. Prenese oglase
@@ -184,7 +186,7 @@ def main(redownload=False, reparse=True):
     3. Podatke shrani v csv datoteko
     """
     # Najprej v lokalno datoteko shranimo glavno stran
-    save_frontpage(restaurants_frontpage_url, restaurants_directory, frontpage_filename)
+    #save_frontpage(restaurants_frontpage_url, restaurants_directory, frontpage_filename)
 
     # Iz lokalne (html) datoteke preberemo podatke
     ads = page_to_ads(read_file_to_string(restaurants_directory, frontpage_filename))
@@ -193,6 +195,26 @@ def main(redownload=False, reparse=True):
     # Podatke shranimo v csv datoteko
     write_restaurants_ads_to_csv(ads_nice, restaurants_directory, csv_filename)
 
+def zanka():
+    for stevilo in range(1, 20):
+        frontpage_filename = f"frontpage_{stevilo}.html"
+        # Iz lokalne (html) datoteke preberemo podatke
+        ads = page_to_ads(read_file_to_string(restaurants_directory, frontpage_filename))
+        # Podatke prebermo v lepšo obliko (seznam slovarjev)
+        ads_nice = [get_dict_from_ad_block(ad) for ad in ads]
+        seznam_tipov = []
+        for slovar in ads_nice:
+            if slovar["tip"] != None:
+                slovar["tip"] = slovar["tip"].split(",")
+            for tip in slovar["tip"]:
+                seznam_tipov.append({"ime" : slovar["ime"], "tip" : tip})
+            del slovar["tip"]
+        
+        write_restaurants_ads_to_csv(seznam_tipov, restaurants_directory, "tipi.csv")
+            
+        # Podatke shranimo v csv datoteko
+        write_restaurants_ads_to_csv(ads_nice, restaurants_directory, csv_filename)
 
-if __name__ == '__main__':
-   main()
+
+#if __name__ == '__main__':
+ #  main()

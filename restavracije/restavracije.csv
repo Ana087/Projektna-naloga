@@ -1,32 +1,1165 @@
-ime,rating,glasovi,tip,cena
-Rodizio do Brasil,4.5,169,"""Steakhouse"",""Latin""",$$ - $$$
-Monstera bistro,4.5,646,"""European"",""Contemporary""",$$ - $$$
-Capriccio Ristopizza,4.5,266,"""Italian"",""Pizza""",$$ - $$$
-Restavracija Strelec,4.5,724,"""European"",""Slovenian""",$$$$
-Restaurant Compa,4.5,487,"""Steakhouse"",""Barbecue""",$$ - $$$
-Atelje,4.5,285,"""International"",""European""",$$$$
-Restavracija Cubo,4.5,323,"""Seafood"",""European""",$$$$
-Zbornica,4.5,423,"""American"",""Grill""",$
-Landerik,4.5,153,"""European"",""Slovenian""",$$ - $$$
-Luda,4.5,542,"""Contemporary"",""Slovenian""",$$ - $$$
-EK Bistro,4.5,250,"""Cafe"",""Central European""",$$ - $$$
-Julija Restaurant,4.5,3575,"""European"",""Slovenian""",$$ - $$$
-Gostilna Dela,4.5,265,"""Mediterranean"",""European""",$
-Restaurant Hisa Pod Gradom,4.5,1003,"""Mediterranean"",""Slovenian""",$$ - $$$
-Kralj Zara,4.5,707,"""American"",""Steakhouse""",$$ - $$$
-Odprta Kuhna,4.5,309,"""Japanese"",""Fast Food""",$
-Pri Skofu,4.5,529,"""Mediterranean"",""European""",$$ - $$$
-Fari's,4.5,272,"""Fast Food"",""Middle Eastern""",$
-Pop's Place,4.5,2153,"""American"",""Barbecue""",$$ - $$$
-El Patron Tacos & Store,5,78,"""Mexican"",""Street Food""",$
-Valvasor,4.5,1163,"""Mediterranean"",""European""",$$$$
-Cajna hisa - Tea House,4.5,325,"""Cafe""",$$ - $$$
-Klobasarna,4.5,692,"""Fast Food"",""European""",$
-Robba,4.5,1215,"""European"",""Eastern European""",$$ - $$$
-Kodila Gourmet,5,75,"""Slovenian"",""Central European""",$
-TaBar,4.5,516,"""Mediterranean"",""European""",$$ - $$$
-Azur - tratorija s picami,4.5,242,"""Italian"",""Pizza""",$$ - $$$
-Das ist Valter,4.5,389,"""Barbecue"",""European""",$
-Le Petit cafe,4.5,872,"""Cafe"",""European""",$$ - $$$
-Pizzerija Trta,4.5,303,"""Italian"",""Pizza""",$$ - $$$
-Spajza,4.5,1119,"""Seafood"",""Mediterranean""",$$$$
+ime,rating,glasovi,cena
+
+
+Taman Organic,4.5,86,$$ - $$$
+
+Monstera bistro,4.5,646,$$ - $$$
+
+Capriccio Ristopizza,4.5,266,$$ - $$$
+
+Restavracija Strelec,4.5,724,$$$$
+
+Restaurant Compa,4.5,487,$$ - $$$
+
+Atelje,4.5,285,$$$$
+
+Restavracija Cubo,4.5,323,$$$$
+
+Zbornica,4.5,423,$
+
+Landerik,4.5,153,$$ - $$$
+
+Luda,4.5,542,$$ - $$$
+
+EK Bistro,4.5,250,$$ - $$$
+
+Julija Restaurant,4.5,3575,$$ - $$$
+
+Gostilna Dela,4.5,265,$
+
+Restaurant Hisa Pod Gradom,4.5,1003,$$ - $$$
+
+Kralj Zara,4.5,707,$$ - $$$
+
+Odprta Kuhna,4.5,309,$
+
+Pri Skofu,4.5,529,$$ - $$$
+
+Fari's,4.5,272,$
+
+Pop's Place,4.5,2153,$$ - $$$
+
+El Patron Tacos & Store,5,78,$
+
+Valvasor,4.5,1163,$$$$
+
+Cajna hisa - Tea House,4.5,325,$$ - $$$
+
+Klobasarna,4.5,692,$
+
+Robba,4.5,1215,$$ - $$$
+
+Kodila Gourmet,5,75,$
+
+TaBar,4.5,516,$$ - $$$
+
+Azur - tratorija s picami,4.5,242,$$ - $$$
+
+Das ist Valter,4.5,389,$
+
+Le Petit cafe,4.5,872,$$ - $$$
+
+Pizzerija Trta,4.5,303,$$ - $$$
+
+Spajza,4.5,1119,$$$$
+
+Bio restaurant Trnulja,4,10,$$ - $$$
+
+Manna,4.5,651,$$$$
+
+Druga Violina,4.5,1645,$
+
+Marley & Me,4.5,1436,$$ - $$$
+
+Taj Mahal restaurant,4.5,235,$$ - $$$
+
+Sorbara Steak House,4.5,494,$$ - $$$
+
+Pivnica Union,4.5,661,$$ - $$$
+
+Sarajevo '84,4,1143,$
+
+Most,4.5,1083,$$ - $$$
+
+Dezela Okusov,4.5,184,$$ - $$$
+
+Gostilnica 5-6 kg,4.5,445,$$ - $$$
+
+Verace,4,330,$$ - $$$
+
+Gostilna Na gradu,4,520,$$ - $$$
+
+Slovenska Hisa,4.5,331,$$ - $$$
+
+Pizzeria FoculuS,4,808,$$ - $$$
+
+Gostilna As,4.5,796,$$$$
+
+Vino & Ribe,4,241,$
+
+Gostilna Kovac,4.5,81,$$ - $$$
+
+Gostilna Cad,4,314,$$ - $$$
+
+Ala Prsuterija,5,60,$$ - $$$
+
+Italijanska Restavracija Mirje,4.5,95,$$ - $$$
+
+Sushimama,4,288,$$ - $$$
+
+Dvorni Bar,4,255,$$ - $$$
+
+Nobel burek,4.5,157,$
+
+Skuhna,4.5,73,$$ - $$$
+
+Libanonske meze in drugi uzitki,4.5,193,$$ - $$$
+
+Pops Place Pizza,4.5,127,$$ - $$$
+
+Loving Hut Ljubljana Center,4.5,143,$
+
+Fany & Mary,4,480,$
+
+Mala Terasa,5,60,$
+
+Rodizio do Brasil,4.5,169,$$ - $$$
+
+Allegria,4,240,$$ - $$$
+
+Peti 181,4.5,113,$$$$
+
+Moji struklji,4.5,82,$$ - $$$
+
+AS Aperitivo,4,401,$$ - $$$
+
+Chinese Restaurant Zhong Hua,4.5,69,$
+
+Gostilna Pri kolovratu,4,219,$$ - $$$
+
+Rio Momo,4,193,$$ - $$$
+
+Shambala,4,238,$$ - $$$
+
+Sato Bento,4.5,64,$$ - $$$
+
+Gostilna Jakob Franc,4.5,135,$$ - $$$
+
+Vodnikov Hram,4,856,$$ - $$$
+
+Lockal,4.5,78,$$ - $$$
+
+Restavracija Osterija Pr'Noni,4.5,155,$$ - $$$
+
+Paninoteka Restaurant,4,689,$$ - $$$
+
+Gostilnica Kaval,4,205,$$ - $$$
+
+DA BU DA Asian Fusion and Bar,4,214,$$ - $$$
+
+JB,4,249,$$$$
+
+Cafe Romeo,4,554,$$ - $$$
+
+Slovenska Hisa - Figovec,4,214,$$ - $$$
+
+OnThai,4.5,85,$$ - $$$
+
+Mediterraneo,4,349,$$ - $$$
+
+Pri Zabarju Gostilna,4.5,91,$$ - $$$
+
+Burek Olimpija,4.5,110,$
+
+KOA Bistro and Bar,5,40,$
+
+Slon 1552,4,132,$$ - $$$
+
+Gujzina,4,953,$$ - $$$
+
+Gostilna Sokol Ljubljana,3.5,2770,$$ - $$$
+
+Maru Japonska Restavracija Ljubljana,4.5,104,$$ - $$$
+
+Taman Organic,4.5,86,$$ - $$$
+
+"Katrca, Hisa piva in kulinarike",4.5,109,$$ - $$$
+
+Vander Restaurant,4,345,$$ - $$$
+
+Bio restaurant Trnulja,4,10,$$ - $$$
+
+Tokyo Piknik,4,325,$$ - $$$
+
+Gostilna Sestica,4,864,$$ - $$$
+
+Restavracija Ronin,4,474,$$ - $$$
+
+Pizzeria Osmica,4,158,$$ - $$$
+
+Soba 102,4,192,$$ - $$$
+
+Cantina Restaurantes Mexicana,4,572,$$ - $$$
+
+Kolibri Cocktail Bar,4.5,82,$$ - $$$
+
+Pivnica Lajbah,4.5,41,$
+
+Picerija Garaza,4.5,94,$$ - $$$
+
+Joe Pena's Cantina y Bar,4,205,$$ - $$$
+
+Namaste,4,381,$$ - $$$
+
+Stara Pumpa,4.5,42,$
+
+Restavracija Harfa,4.5,44,$$ - $$$
+
+B-restaurant&bar,4.5,47,$$$$
+
+Maharaja,4,80,$$ - $$$
+
+Kucha,4.5,42,$$ - $$$
+
+Cutty Sark Pub,4,249,$$ - $$$
+
+Sveti Florijan,4.5,67,$$ - $$$
+
+Altroke,4,391,$$ - $$$
+
+Aroma Restaurant & Pizzeria,3.5,453,$$ - $$$
+
+Asian Bistro OSHA,4.5,62,$
+
+Ajdovo Zrno,4.5,49,$$ - $$$
+
+Back Werk,4,64,$
+
+Mexico Mediterra Place,4.5,58,$$ - $$$
+
+Restavracija Mandala - vegan restaurant,5,20,$$ - $$$
+
+Street Food Valentin,4,74,$
+
+Bazilika Bistro,4.5,65,$$ - $$$
+
+Gostilna Vitez,4.5,43,$$ - $$$
+
+Gostilna Pod Vrbo,4.5,59,$$ - $$$
+
+10 v pol,4.5,53,$
+
+Soba 102,4,192,$$ - $$$
+
+Gostilna Vida,4.5,49,$$ - $$$
+
+Via Bona,4,62,$$ - $$$
+
+Burger Time Ljubljana,5,19,$
+
+Allegria,4,240,$$ - $$$
+
+Gostilna Pri Stricku,5,28,$$ - $$$
+
+Dragon Garden,4.5,30,$
+
+Restavracija Neboticnik,4,146,$$ - $$$
+
+Makalonca,4,183,$$ - $$$
+
+Namaste Indian Express,4.5,40,$
+
+Gostilna Janezic,4.5,30,$$ - $$$
+
+Dvor Tacen,4.5,30,$$ - $$$
+
+Pizzeria Ljubljanski Dvor,3.5,677,$$ - $$$
+
+KUHINJA KRUSIC,4.5,31,$$ - $$$
+
+Zlata Ribica,3.5,928,$$ - $$$
+
+Saraj Restavracija,4,87,$$ - $$$
+
+Bar Cez Cesto,5,19,$
+
+Kavarna Rog,4,116,$$ - $$$
+
+Gostilna in pizzerija Jurman,4,122,$$ - $$$
+
+Veganika,5,18,$$ - $$$
+
+Brunch for bunch,5,16,$$ - $$$
+
+diVino restaurant & bar,4,87,$$ - $$$
+
+Restavracija Pen Klub,4.5,38,$$ - $$$
+
+Barbarella Arkade Bistro (Vegan and Vegeterian),4,68,$$ - $$$
+
+Kavarna Tiskarna,4,95,$$ - $$$
+
+Gostilna Mihovec,4.5,32,$$ - $$$
+
+Boschtiz,5,35,$$ - $$$
+
+Maratonec,4.5,28,$$ - $$$
+
+Krtina D'Ampezzo,4.5,52,$$ - $$$
+
+Pri Kovacu,4,55,$
+
+Gostilna Cubr,4.5,26,$$ - $$$
+
+Taman Organic,4.5,86,$$ - $$$
+
+Tandoori,4.0,65,$
+
+Pizzeria Parma Ljubljana,4.0,63,$
+
+Skriti Kot,4.5,43,$$ - $$$
+
+Sisters Kurtos,5.0,18,$
+
+Argentino,3.5,166,$$$$
+
+SARAJEVSKI GRILL PAVZA,4.5,29,$
+
+"Utrip - bar, bistro, kavarna",4.5,21,$$ - $$$
+
+ZMAUC,4.5,39,$$ - $$$
+
+Loving Hut,4.5,25,$
+
+Okrepcevalnica Ribca,3.5,301,$
+
+Barbarella Juicebar Vegan & Vegetarian,4.5,22,$$ - $$$
+
+Novi Shanghai,4.5,39,$$ - $$$
+
+Gostilnica in pivnica SISKA,4.5,32,$$ - $$$
+
+Piazza Ristorante Pizzeria,4.0,117,$$ - $$$
+
+Maxim,4.5,33,$$$$
+
+Repete Jazz & Okrepcila,4.0,55,$$ - $$$
+
+Holidays' Pub,4.0,50,$$ - $$$
+
+Cafe Antico,3.5,108,$
+
+Cojzla,5.0,19,$$ - $$$
+
+Patrick's Irish Pub,4.0,72,$
+
+Penzion Kmecki hram,4.5,34,$$ - $$$
+
+Dubocica,4.0,57,$$ - $$$
+
+Chuty's - Heart Of Asia,4.0,70,$$ - $$$
+
+Kult316,5.0,16,$$ - $$$
+
+Operna Klet,4.0,49,$$ - $$$
+
+Forum,4.0,63,$$ - $$$
+
+Gostilna Florjanckov Hram,4.5,29,$$ - $$$
+
+Winners Lounge,4.0,46,$$ - $$$
+
+MoySushi,3.5,136,$$ - $$$
+
+Tia's Pizza,4.5,28,$
+
+Soba 102,4,192,$$ - $$$
+
+Taverna Tatjana,3.5,153,$$ - $$$
+
+Gostilna Tavcar,4.5,26,$$ - $$$
+
+Pizzeria Laterna,4.5,34,$
+
+Roza Slon,4,37,$
+
+Solist,4,33,$$ - $$$
+
+Grand Cafe Ljubljana,4,39,$$ - $$$
+
+Krpan,4,45,$$ - $$$
+
+Gostilna Gorjanc,4,38,$$ - $$$
+
+Gostilna Pri Vodniku,4,50,$$ - $$$
+
+Plato,4,44,$$ - $$$
+
+"Pizzeria/Picerija, Spagetarija, Kavarna Oliva",4.5,19,$$ - $$$
+
+Park Zibert,4,30,$$ - $$$
+
+Menagerie,5,11,$$ - $$$
+
+Sax Pub,4,36,$
+
+Vegetarian restaurant Radha Govinda,4.5,35,$$ - $$$
+
+Gostilna Jelen,4,67,$$ - $$$
+
+Flo Bistro,4.5,16,null
+
+Hitra Zlica,5,16,$$ - $$$
+
+Restavracija Fresco,4,56,$
+
+Gostilna Portal,4,63,$$ - $$$
+
+Premier Pub,4,46,$$ - $$$
+
+Ogam,4.5,19,$$ - $$$
+
+Intercontinental - hotel restaurant,4,21,$$$$
+
+Gostilna Stari Tisler,4,59,$$ - $$$
+
+Kavarna Macek,4,62,$$ - $$$
+
+Ajda,4.5,13,$
+
+Han,4,34,$$ - $$$
+
+Okrepcevalnica Zoki,4.5,20,$
+
+Cielito Lindo,5,13,$
+
+Soncek,4.5,15,$
+
+Bio restaurant Trnulja,4,10,$$ - $$$
+
+Magda,4,22,$$ - $$$
+
+Central Station,3.5,150,$
+
+Dinner In The Dark,5,62,$$$$
+
+Favola Spageterija & Pizzerija,4,36,$$ - $$$
+
+Picerija da Mattia,4,34,$$ - $$$
+
+Spirit Bar & Kitchen,4.5,22,$$ - $$$
+
+Ns Plac,5,9,null
+
+Rostilj,4,27,$
+
+Gostilnica Orle,4.5,15,$$ - $$$
+
+Kratochwill,3.5,104,$$ - $$$
+
+Gostilna Dobnikar,4.5,12,$$ - $$$
+
+Origano,4,24,$$ - $$$
+
+Gostilnica Vinka,4,33,$$ - $$$
+
+Zebra Patisseries,5,8,$$ - $$$
+
+Trappa Pizzeria & Bar,4.5,15,$$ - $$$
+
+Guliver,4.5,10,$$ - $$$
+
+Balkan Express,4.5,15,$$ - $$$
+
+Pub Plecnik,5,6,$$ - $$$
+
+Korean Bistro Suwon,4,42,$$ - $$$
+
+Peruzza,5,8,$$ - $$$
+
+Ljubljana,4.5,14,null
+
+Cesarsko mesto,4,45,$$ - $$$
+
+Singer Atelier Cafe,4.5,11,null
+
+Restaurant Angel,4,26,$$ - $$$
+
+Restaurant Union,4,16,$$ - $$$
+
+Gas Station,4.5,15,$
+
+Promenada,3.5,219,$$ - $$$
+
+The Prince of Orange,4.5,28,$$ - $$$
+
+Hallo Leskovac,4,28,$
+
+Restavracija Sole,4.5,18,$
+
+Allegria,4,240,$$ - $$$
+
+Safran,4.5,11,$$ - $$$
+
+Kava Bar Koticek,5,7,$
+
+Nostalgija,4.5,9,$
+
+Gostilnica Marjeta,5,9,$
+
+Juzna Na Plac,4.5,8,$
+
+Gostilna Kosir,4,31,$$ - $$$
+
+Gostilna Nona,4,23,$$ - $$$
+
+Gostilnica in pivnica Vic,5,6,$$ - $$$
+
+Dodo Pizza Slovenija,5,6,null
+
+Ramen by Maru,4,16,$$ - $$$
+
+Restavracija Element,4,25,$$ - $$$
+
+Pars,4.5,11,$$ - $$$
+
+Izlozba,4.5,10,$$ - $$$
+
+Livada,4,53,$$ - $$$
+
+Fast Food BUREK 1,4,13,$
+
+Gig,4,23,$
+
+Chang,4.5,7,$$ - $$$
+
+Separe,4,21,$$$$
+
+Okrepcevalnica Kongo,4,11,$$ - $$$
+
+Liquid Bar,4.5,11,$$ - $$$
+
+Gostilna Rozna Hisa,4.5,11,$$ - $$$
+
+Kitajski Vrt,4,40,$$ - $$$
+
+Lacna koza,4.5,12,$$ - $$$
+
+Lavine - Ice cream rolls,4.5,8,$$ - $$$
+
+Gaudi Ayurvedic & Vegan,4.5,23,$$ - $$$
+
+Food Porn,5,5,null
+
+Brunch,3.5,36,$$ - $$$
+
+Franky's Bar,4,13,null
+
+Art Bread,5,7,null
+
+Foodtruck Stara Sola,5,5,$
+
+Soba 102,4,192,$$ - $$$
+
+eVino Wine bar,4,29,$$ - $$$
+
+Gostilna Raubar,4,12,$$ - $$$
+
+Hombre,3.5,36,$$ - $$$
+
+Flancat Ljubljana,4.5,8,$
+
+Gostilna Pecaric,4,12,null
+
+LP Bar,4.5,7,null
+
+Bistro Ftp,4.5,10,$$ - $$$
+
+Gostilna Kersic,3.5,23,$
+
+Atrium,4,13,$$ - $$$
+
+Restavracija Veliki Hong Kong,4,34,$$ - $$$
+
+Dobrote Vzhoda,4,10,null
+
+Pizzeria Bullizza,4,9,$
+
+Clementina Caffe Bar,4,12,$
+
+Restavracija Vozi Misko,4.5,8,$
+
+Mr and Mrs Green,4,18,$$ - $$$
+
+Zmoht,5,5,null
+
+Kavarna in bistro MihaChef,5,6,$$ - $$$
+
+Lepa Zoga,4,20,$
+
+Ice Cream Bar Grefino,4.5,6,null
+
+Slascicarna Rasica,5,6,null
+
+Okrepcevalnica Jagoda Kebab,4.5,12,$
+
+Gastro House 151,4,10,$$ - $$$
+
+The ICE CREAM Ljubljana,5,4,$
+
+Simit Sarayi Ljubljana,4.5,8,$$ - $$$
+
+Bar Bistro Platana,4,11,$
+
+Chuty's - BTC City Ljubljana,5,4,null
+
+Refreshment Riviera,4.5,5,null
+
+Konoba - Rival trade,4,10,null
+
+Han,3.5,85,$$ - $$$
+
+Dobra Vila Pizzeria,4,13,$
+
+Soba 102,4,192,$$ - $$$
+
+Eksperiment Restaurant & Bar,3.5,63,$$ - $$$
+
+Krakovc,4,24,$
+
+Subway Bezigrad,4,11,$
+
+Horse's Pub,4,11,$$ - $$$
+
+Bistro Ambient,4,11,$$ - $$$
+
+Minicafegolf,4.5,15,$$ - $$$
+
+Restavracija B2,4.5,6,null
+
+Pizzeria Tunnel,4,31,$
+
+d'Burger Place,4,8,$$ - $$$
+
+Yildiz han,4,15,$$ - $$$
+
+Gostilna Za Pumpo,3.5,20,$$ - $$$
+
+La Favela,4,11,$$ - $$$
+
+Radha Govinda,5,4,null
+
+Gostilna Roznik,4.5,7,$
+
+Zvezda,4,7,null
+
+Kavarna Zofa - Cafe Zofa,5,3,$
+
+Slascicarna in Kavarna Dulcis Caffe,4,10,$$ - $$$
+
+Pecnikar,4.5,6,$$ - $$$
+
+Restavracija Zmajev Paviljon,3.5,13,$$ - $$$
+
+Maxi Restavracija Romansa 1971,4,6,null
+
+Bio restaurant Trnulja,4,10,$$ - $$$
+
+Picerija Etna,3.5,34,$$ - $$$
+
+PE Pizza Pub,4.5,8,null
+
+Hotspot Bar & Bistro,4,11,$$ - $$$
+
+Gregorino,4,6,$$ - $$$
+
+Grill point,4,7,null
+
+Gostilnica Kongo,4.5,5,null
+
+Kavarna Mozaik,4,7,$
+
+Restavracija Tartuf,3.5,16,$
+
+Domaca Peka,4.5,6,null
+
+Pizzeria Osmica,4,158,$$ - $$$
+
+McDonald's,3.5,22,$
+
+Osterija pri Oljki,3.5,27,$$ - $$$
+
+Barbado,4.5,5,$
+
+Gostilna Pekel,4,12,$$ - $$$
+
+Beli Labod,3.5,15,$
+
+Cuk Bar,5,3,null
+
+Restaurant and Pizzeria Grad Kodeljevo,3.5,21,$$ - $$$
+
+Gujzina Mencigar Nobile,4,9,$$ - $$$
+
+Long Burgers,5,3,null
+
+Krejan-Levec,5,3,null
+
+Superbabi,4.5,3,$$ - $$$
+
+Yildiz Han - Turska restavracija,3.5,25,$$ - $$$
+
+Reformer Pub,4,9,$
+
+Presnica Take-Away Center (vegan and vegetarian,4.5,3,$
+
+Halo Pinki,4,7,$
+
+Rex Bistro Ljubljana,4.5,4,null
+
+ZAJCEK BAR,4.5,4,null
+
+Pri Kuklju,4.5,7,null
+
+Plecnikov Hram Krizanke,4,6,$
+
+Emonska Klet,3.5,38,$$ - $$$
+
+Moderna Speciality Cafe,4,12,$$ - $$$
+
+Dok 19,3.5,14,null
+
+Park Bar,4,9,$$ - $$$
+
+Skrnic'lj,4.5,3,null
+
+Taco Polako,5,2,$
+
+Curry Life Figovec,4.5,4,null
+
+Asian fusion restaurant TLOFT,3.5,42,$$ - $$$
+
+Zaromanija,5,2,$
+
+Trnovski zvon,3.5,57,$$ - $$$
+
+Nim 8 Min,3.5,7,$
+
+Soba 102,4,192,$$ - $$$
+
+Plac,4,12,$$ - $$$
+
+Degustarna,3.5,9,$
+
+Das ist Valter Ljubljana Center,5,16,$
+
+Sunknzemlja,4.5,3,null
+
+Mala Mal'ca,5,2,null
+
+Restavracija XXXL,3.5,8,null
+
+Aga Kebap,3.5,11,$
+
+Gostilnica Stara trta,5,2,null
+
+Grajska Kavarna,3.5,36,$$ - $$$
+
+kitajska restavracija kitajski zmaj,3.5,16,$$ - $$$
+
+Gostilna Brinovc,5,2,$$$$
+
+Picestavracija Boccaccio,3.5,26,$$ - $$$
+
+volta cafe,4,10,$
+
+To Je Noro,4,8,null
+
+Nisa Lokal Bistro,5,2,$
+
+Gostisce Vrbinc,4,4,null
+
+Arhiv bar,5,2,null
+
+Kacji pastir,4,4,null
+
+Marjetice,5,2,null
+
+Super Psanc PE Pavilion,5,2,null
+
++Kantina MSUM,5,6,$
+
+Imperio Mexicano,3,34,$$ - $$$
+
+Rocky's Craft Grill & Beer,4,5,$
+
+Kapuciner Kavarna,4.5,2,null
+
+Kashmir Indijska Restavracija,4,4,$
+
+Cube burger,3.5,14,$$ - $$$
+
+Okrepcevalnica Podhod,5,2,null
+
+Buf Gostinstvo,3.5,6,null
+
+Surf'n'fries,4.5,2,$
+
+Gostilna Jerincek,5,2,null
+
+Rodizio do Brasil,4.5,169,$$ - $$$
+
+Majmun restaurant & bar,4,10,$$ - $$$
+
+Gostilna in Pizzerija Breza,3.5,6,null
+
+SRCEK,4.5,3,null
+
+Duff,5,2,null
+
+Galerija Bar Trenutek,4.5,2,$
+
+Casa Wine & Tapas,4.5,3,$
+
+ZAK,4,3,null
+
+DEKANTER Wine boutique,5,2,$$$$
+
+ALTER,4.5,3,null
+
+Crnuski Dvor,4,3,null
+
+Gostilna Pri Tincku,4.5,4,null
+
+Restavracija & Pizzeria Tartuf,4,5,null
+
+Svetilnik,4,4,null
+
+Kurji tat,3.5,10,$
+
+Pub Pod Skalco,3.5,9,$
+
+Pizza 8,5,2,null
+
+Istanbul Kavarna,5,1,null
+
+Kavarna Mackon,5,1,null
+
+Kraljzara,5,1,null
+
+Dobro Jutro Vietnam in Ljubljana,4,2,$
+
+Restavracija Puccini,3,33,$$ - $$$
+
+Cafe METROPOL,5,1,$
+
+Kavarna Pavon,5,1,null
+
+Bistro Egoistka,3.5,3,null
+
+Zlati zob,5,1,null
+
+Bistro Svicarija,5,1,$
+
+barjan,4.5,3,null
+
+Asan Chill & Lounge Room,5,1,null
+
+Bulldog Bar,5,1,null
+
+Biljardnica Direkt - Billiards&Pub,5,1,null
+
+Taman Organic,4.5,86,$$ - $$$
+
+Pekarna Malo Drugace,5,1,null
+
+Gostilna Storklja,5,1,null
+
+Pizzeria Luigi,3,28,$
+
+Okrepcevalnica Ribnik,5,1,$$ - $$$
+
+Gostilna Pod Kostanji,5,1,null
+
+Sendtvic,5,1,null
+
+Naj Kavarna,5,1,null
+
+Coffe bar \,4,2,$
+
+Pod Strehco,5,1,$
+
+Slascicarna Galerija Grad,4,10,$$ - $$$
+
+Jurcek Gostilna,3.5,10,null
+
+Cafe Monet,3.5,3,$$ - $$$
+
+LOFT32r,5,1,$$ - $$$
+
+TRIO kavarna in restavracija,5,1,null
+
+Loving Planet,5,2,null
+
+Gostilna pri Bitencu,3.5,7,null
+
+Viski hram Ljubljana,4,2,$$ - $$$
+
+Resdobr,3.5,5,$$ - $$$
+
+Jet Bar,3.5,12,$$ - $$$
+
+Bizeljcan,3.5,3,null
+
+Pub Tivoli,5,1,$$ - $$$
+
+Piazza del papa,3.5,4,null
+
+Buffalo Burger,3.5,4,null
+
+Mlinotest,5,1,null
+
+Gusterija,3.5,3,$$ - $$$
+
+Subito,3.5,6,$$ - $$$
+
+Gostilna Kirn,3.5,9,null
+
+Sparkling wine Istenic,5,1,null
+
+Dunajska Pekarna Loni-pek d.o.o.,4,1,null
+
+Gostilna Babnik,4,1,null
+
+Soba 102,4,192,$$ - $$$
+
+Okrepcevalnica Time Out,4,1,null
+
+Ribogojnica in izletniski turizem Kaja Marolt s.p.,4,1,null
+
+McDonald's,4,1,null
+
+Belidrin,4,1,null
+
+Lunch Cafe,5,1,null
+
+Idea Italia,4,1,$$ - $$$
+
+Enjoy Italy,4,1,null
+
+Cebela,3.5,3,null
+
+Piazza del papa,4,1,null
+
+Svilna Pot,4,1,null
+
+Hotel Restaurant Medno,3.5,6,null
+
+McDonald's,3,23,$
+
+rybarska basta,5,1,null
+
+Spanska Vas,4,1,$
+
+Okrepcevalnica Bistro Avia Radomir Masovic S.p,4,1,null
+
+"Ristorante, Pizzeria Bufalaf",3,6,$
+
+Dnevni Bar Krenos,4,1,null
+
+Ostarija Petrinka,3.5,3,null
+
+Tombstone Saloon,4,1,null
+
+El Clasico,3.5,4,null
+
+BOEM - Tradicionalna Srbska Restavracija,3.5,7,$$ - $$$
+
+Farao,3.5,3,$$ - $$$
+
+Klub 300,3,15,$$ - $$$
+
+Restavracija 123 Self-Service,3.5,5,$$ - $$$
+
+Basburek Ljubljana,3.5,6,$
+
+Swajger,4,1,$$$$
+
+Wine Bar Suklje,5,93,null
+
+Smiths Salads & Sandwiches,3.5,6,null
+
+Ribarnica Valentin,3,26,$$ - $$$
+
+Colnarna Park Tivoli,3,53,$$ - $$$
+
+Dinner In The Dark,5,62,$$$$
+
+la storia trattoria,3,8,null
+
+Pizzerija Sestinka,3,3,$
+
+Bar Arkade,5,3,$
+
+Pri Slovenki,3,1,null
+
+Tocka 213,3,2,$
+
+Gostilna Pri Micki,3,1,null
+
+L Bistro & Bar,3,2,null
+
+Kavarna Tromostovje,3,60,$$ - $$$
+
+Meta in Bazilika,3,28,$$ - $$$
+
+Fnx,3.5,10,null
+
+McDonald's,3,16,null
+
+Gostilna Euro Gurman,4.5,3,null
+
+Gostilna Macek,3,2,null
+
+Kitajski Dvor,3,10,$$ - $$$
+
+Hotel Rakov Skocjan,3,4,null
+
+Kratochwill,2.5,2,null
+
+Inn Ledinek,5,2,$
+
+Centralna Postaja,3,31,$$ - $$$
+
+Anzic,4,7,null
+
+Terminal Lounge Bar & Club,2.5,10,$$ - $$$
+
+HALO PINKI d.o.o.,2.5,5,$
+
+Habibi,2.5,6,$$ - $$$
+
+Biljardnica Kaval,2.5,3,$$ - $$$
+
+Gostilna in pizzerija Zajcja dobrava,2.5,9,null
+
+The Coffee,4,6,null
+
+Halo Shaolin,1,1,null
+
+Bar Kapo Gor,5,1,$
+
+Urbani Piknik,5,1,null
+
+Stara Macka,2.5,65,$$ - $$$
+
+Spanska Vas,4.5,4,$$ - $$$
+
+Rodizio do Brasil,4.5,169,$$ - $$$
+
+Verace 2.0,2.5,22,$
+
+Pizza Marija,4,15,$$ - $$$
+
+Gostilnica Pri Mostu,5,1,$$ - $$$
+
+Halo Katra,2,3,$$ - $$$
+
+Kavarna LOKUS,2,7,$
+
+Balkan GRILL,1,2,$
+
+Running Sushi & Wok,2.5,33,$$ - $$$
+
+Spica Caffe,2.5,30,$$ - $$$
+
+Al Capone,2,43,$$ - $$$
+
+Gostilna in taverna Stern,2,12,null
+
+Drama Kavarna,4,1,$
+
+BIFE - Socna plat solat,-1,1,null
+
+Cokoladnica Ljubljana,-1,0,$$ - $$$
+
+Biljardna hisa Ljubljana,-1,0,$
+
+BTC City Ljubljana Dvorana E,-1,0,$$ - $$$
+
+Blackout Bar & Lounge,-1,0,$
+
+"Trgovina Vzemi s sabo, Andrej Belovic",-1,0,null
+
+Fitcity Bar,-1,0,$$$$
+
+Pizzerija Medobar,-1,0,null
+
+Picerija Pr' Buric,-1,0,$$ - $$$
+
+Cacao BTC,-1,0,$$ - $$$
+
+Ali Baba,-1,0,null
+
+Golden Chips,-1,0,$
+
+Polona,-1,0,$$ - $$$
+
+Letras d.o.o.,-1,0,$$ - $$$
+
+Okrepcevalnica Pogaca,-1,0,null
+
+Divinus Wine Store,-1,0,$$$$
+
+"Foodie, restavracija in kavarna",-1,0,$$ - $$$
+
+Plata,-1,0,null
+
+Trzenje,-1,0,null
+
+Allegria,4,240,$$ - $$$
+
+Opica Food,-1,0,$
+
+Icelend,-1,0,$$ - $$$
+
+Kingpin Lounge Bar,-1,0,$
+
+Kavarna Square 118,-1,0,$
+
+Dobra Hisa,-1,0,null
+
+Biljardnica Direkt,-1,0,$
+
+Rex Bistro,-1,0,null
+
+Bisto Natura,-1,0,$
+
+S' Bistro,-1,0,$
+
+Kitajska Restavracija,-1,0,$$ - $$$
+
+Habitat 32,-1,0,$$ - $$$
+
+Kiparna,-1,0,null
+
+Cafe & Vino Bavarc,-1,0,$$ - $$$
+
+Kavarna Trafika,-1,0,$
+
+Krel Silvo S.p.,-1,0,$
+
+Miriams Pub,-1,0,null
+
+Nabrezje 15,-1,0,$$ - $$$
+
+Acapulco lounge bar,-1,0,$
+
+Ginger bar,-1,0,null
+
+Yortie,-1,0,$
+
+Kulinaric Hisa Somrak,-1,0,null
+
+Roma,-1,0,$$ - $$$
+
