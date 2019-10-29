@@ -7,16 +7,21 @@ import os
 # Pomožna orodja za pridobivanje podatkov s spleta.
 ###############################################################################
 dodatek = ""
+
 # URL glavne strani
 restaurants_frontpage_url = f'https://www.tripadvisor.com/Restaurants-g274873-{dodatek}Ljubljana_Upper_Carniola_Region.html#EATERY_OVERVIEW_BOX'
-# mapa, v katero bomo shranili podatke
+
+# mapa, v katei so shranjeni podatki
 restaurants_directory = 'restavracije'
-# ime datoteke v katero bomo shranili glavno stran
+
+# ime datoteke v kateri je shranjena glavna stran
 frontpage_filename = 'frontpage.html'
-# ime CSV datoteke v katero bomo shranili podatke
+
+# ime CSV datoteke v kateri so shranjeni podatki
 csv_filename = 'restavracije.csv'
 
 
+# funkcija zamenja html stran
 def zamenjaj_stran(st_strani):
     if st_strani == 1:
         dodatek = ""
@@ -53,9 +58,7 @@ def save_string_to_file(text, directory, filename):
     return None
 
 
-# Definirajte funkcijo, ki prenese glavno stran in jo shrani v datoteko.
-
-
+# funkcija prenese glavno stran in jo shrani v datoteko
 def save_frontpage(page, directory, filename):
     """Funkcija shrani vsebino spletne strani na naslovu "page" v datoteko
     "directory"/"filename"."""
@@ -63,7 +66,7 @@ def save_frontpage(page, directory, filename):
     save_string_to_file(content, directory, filename)
     return
 
-
+# funkcija potegne določeno html stran
 def potegni_strani():
     for stevilo in range(1, 20):
         dodatek = zamenjaj_stran(stevilo)
@@ -74,7 +77,7 @@ def potegni_strani():
 
 
 ###############################################################################
-# Po pridobitvi podatkov jih želimo obdelati.
+# Obdelava podatkov.
 ###############################################################################
 
 
@@ -83,12 +86,6 @@ def read_file_to_string(directory, filename):
     path = os.path.join(directory, filename)
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
-
-
-# Definirajte funkcijo, ki sprejme niz, ki predstavlja vsebino spletne strani,
-# in ga razdeli na dele, kjer vsak del predstavlja en oglas. To storite s
-# pomočjo regularnih izrazov, ki označujejo začetek in konec posameznega
-# oglasa. Funkcija naj vrne seznam nizov.
 
 
 def page_to_ads(page_content):
@@ -100,13 +97,8 @@ def page_to_ads(page_content):
     return ads
 
 
-# Definirajte funkcijo, ki sprejme niz, ki predstavlja oglas, in izlušči
-# podatke o imenu, ceni in opisu v oglasu.
-#bloki = page_to_ads(read_file_to_string("restavracije", "frontpage_18.html"))
-#get_dict_from_ad_block(bloki[1])
-
 def get_dict_from_ad_block(block):
-    """Funkcija iz niza za posamezen oglasni blok izlušči podatke o imenu, oceni, glasovih in tipu
+    """Funkcija iz niza za posamezen oglasni blok izlušči podatke o imenu, oceni, glasovih, tipu in ceni
     ter vrne slovar, ki vsebuje ustrezne podatke
     """
     rx = re.compile(r'"name":"(?P<ime>.*?)".*?'
@@ -119,15 +111,8 @@ def get_dict_from_ad_block(block):
     ad_dict = data.groupdict()
     return ad_dict
 
-#DEBUGGEX
-#ads_from_file("restavracije", "frontpage_1.html")
 
-
-# Definirajte funkcijo, ki sprejme ime in lokacijo datoteke, ki vsebuje
-# besedilo spletne strani, in vrne seznam slovarjev, ki vsebujejo podatke o
-# vseh oglasih strani.
-
-
+# vrne seznam slovarjev s podatki o oglasih
 def ads_from_file(filename, directory):
     """Funkcija prebere podatke v datoteki "directory"/"filename" in jih
     pretvori (razčleni) v pripadajoč seznam slovarjev za vsak oglas posebej."""
@@ -139,7 +124,7 @@ def ads_from_file(filename, directory):
 
 
 ###############################################################################
-# Obdelane podatke želimo sedaj shraniti.
+# Shranjevanje obdelanih podatkov.
 ###############################################################################
 
 
@@ -152,15 +137,10 @@ def write_csv(fieldnames, rows, directory, filename):
     path = os.path.join(directory, filename)
     with open(path, 'a') as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        #writer.writeheader()
+        #writer.writeheader()   # naslov izpiše le enkrat
         for row in rows:
             writer.writerow(row)
     return
-
-
-# Definirajte funkcijo, ki sprejme neprazen seznam slovarjev, ki predstavljajo
-# podatke iz oglasa restavracije, in zapiše vse podatke v csv datoteko. Imena za
-# stolpce [fieldnames] pridobite iz slovarjev.
 
 
 def write_restaurants_ads_to_csv(ads, directory, filename):
@@ -168,17 +148,11 @@ def write_restaurants_ads_to_csv(ads, directory, filename):
     parametroma "directory"/"filename". Funkcija predpostavi, da so ključi vseh
     sloverjev parametra ads enaki in je seznam ads neprazen.
     """
-    # Stavek assert preveri da zahteva velja
-    # Če drži se program normalno izvaja, drugače pa sproži napako
-    # Prednost je v tem, da ga lahko pod določenimi pogoji izklopimo v
-    # produkcijskem okolju
     assert ads and (all(j.keys() == ads[0].keys() for j in ads))
     write_csv(ads[0].keys(), ads, directory, filename)
 
 
-# Celoten program poženemo v glavni funkciji
-
-
+# glavna funkcija
 def main(redownload=False, reparse=True):
     """Funkcija izvede celoten del pridobivanja podatkov:
     1. Prenese oglase
@@ -195,6 +169,8 @@ def main(redownload=False, reparse=True):
     # Podatke shranimo v csv datoteko
     write_restaurants_ads_to_csv(ads_nice, restaurants_directory, csv_filename)
 
+
+# ustvarjanje csv datoteke
 def zanka():
     for stevilo in range(1, 20):
         frontpage_filename = f"frontpage_{stevilo}.html"
@@ -203,6 +179,7 @@ def zanka():
         # Podatke prebermo v lepšo obliko (seznam slovarjev)
         ads_nice = [get_dict_from_ad_block(ad) for ad in ads]
         seznam_tipov = []
+        # ustvarjanje csv "poddatoteke"
         for slovar in ads_nice:
             if slovar["tip"] != None:
                 slovar["tip"] = slovar["tip"].split(",")
@@ -214,7 +191,3 @@ def zanka():
             
         # Podatke shranimo v csv datoteko
         write_restaurants_ads_to_csv(ads_nice, restaurants_directory, csv_filename)
-
-
-#if __name__ == '__main__':
- #  main()
