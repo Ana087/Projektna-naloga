@@ -170,7 +170,7 @@ def main(redownload=False, reparse=True):
     write_restaurants_ads_to_csv(ads_nice, restaurants_directory, csv_filename)
 
 
-# ustvarjanje csv datoteke
+# ustvarjanje obeh csv datotek
 def zanka():
     for stevilo in range(1, 20):
         frontpage_filename = f"frontpage_{stevilo}.html"

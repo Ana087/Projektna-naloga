@@ -18,3 +18,7 @@ Delovne hipoteze:
 * Ali obstaja povezava med ceno restavracije ter njeno oceno?
 * Kateri tip hrane se najpogosteje pojavlja pri najbolje ocenjenih?
 * Ali obstaja povezava med številom glasov in oceno?
+
+Pod zavihkom restavracije se nahajata dve csv datoteki;
+- prva zajema ime, rating, število glasov ter ceno
+- druga zajema ime ter tip restavracije
