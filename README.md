@@ -16,6 +16,15 @@ Za vsako restavracijo bom zajela:
 * povprečno ceno jedilnika
 
 
+Pod zavihkom restavracije se nahajata dve csv datoteki;
+- prva zajema ime, rating, število glasov ter ceno
+- druga zajema ime ter tip restavracije
+
+Dokument Analiza.ipynb vsebuje obravnavo zgornjih datotek.
+
+Dokument restavracije_zajem_podatkov.py vsebuje postopek zajema podatkov iz spletne strani.
+
+
 ### Delovne hipoteze:
 * Vprašanje 1a : Kateri tip hrane se najpogosteje pojavlja pri najbolje ocenjenih restavracijah?
   HIPOTEZA : Predvidevam, da bodo to restavracije tipa Steakhouse, Seafood in Japanese.
@@ -31,15 +40,6 @@ Za vsako restavracijo bom zajela:
 
 * Vprašanje 4 : Najbolj pogost tip restavracij v Ljubljani?
   HIPOTEZA : Predvidevam, da bodo to restavracije tipa Slovenian, Pizza, Bar in Barbecue.
-
-
-Pod zavihkom restavracije se nahajata dve csv datoteki;
-- prva zajema ime, rating, število glasov ter ceno
-- druga zajema ime ter tip restavracije
-
-Dokument Analiza.ipynb vsebuje obravnavo zgornjih datotek.
-
-Dokument restavracije_zajem_podatkov.py vsebuje postopek zajema podatkov iz spletne strani.
 
 
 ### ODGOVORI NA ZASTAVLJENA ZPRAŠANJA : 
